@@ -8,7 +8,7 @@ User's shouldn't have to login to view anything on this site.  They're simply he
 
 ### Wireframes
 
-!["AppPic1"](./Images/TapeDisc_1.PNG)
+!["WireFrame"](./Images/WireFram_Proj3.PNG)
 
 ### MVP
 
