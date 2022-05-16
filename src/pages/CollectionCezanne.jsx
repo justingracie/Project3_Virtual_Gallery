@@ -19,7 +19,7 @@ const CollectionCezanne = ()=>{
         getArt()
     }, [])
     return(
-        <div>
+        <div className="index">
             {art ? 
             <>
                 {art.map ((work, idx)=>{

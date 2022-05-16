@@ -24,7 +24,7 @@ const CollectionDetails = ()=>{
 
     }, [])
     return(
-        <div>
+        <div className="details">
             {artDetails ?
             <>
                 <h1>{artDetails.title}</h1>
