@@ -13,6 +13,9 @@ const Nav = () =>{
             <Link to="/collectionDali">
                 <div>Dali Exhibit </div>
             </Link>
+            <Link to="/collectionPicasso">
+                <div>Picasso Exhibit </div>
+            </Link>
             <Link to="/browse">
                 <div>Browse</div>
             </Link>

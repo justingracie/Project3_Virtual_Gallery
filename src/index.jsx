@@ -8,6 +8,7 @@ import Browse from './pages/Browse';
 import CollectionCezanne from './pages/CollectionCezanne';
 import CollectionDetails from './pages/CollectionDetailsCezanne';
 import CollectionDali from './pages/CollectionDali';
+import CollectionPicasso from './pages/CollectionPicasso';
 import Home from './pages/Home';
 import Nav from './components/nav';
 
@@ -20,6 +21,7 @@ root.render(
         <Route path='/' element={ <Home />}/> 
         <Route path='collectionCezanne/' element={<CollectionCezanne />}/>
         <Route path='collectionDali/' element={<CollectionDali />}/>
+        <Route path='collectionPicasso/' element={<CollectionPicasso />}/>
         <Route path='collection/:id' element={<CollectionDetails/>}/>
         <Route path='browse/' element={<Browse />}/>
       </Routes>
