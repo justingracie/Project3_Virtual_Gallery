@@ -1,6 +1,6 @@
 
 import './styles/App.css';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import { Outlet } from 'react-router'
 
 function App() {

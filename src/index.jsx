@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './App';
+// import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route} from 'react-router-dom'
 import Browse from './pages/Browse';
-import Collection from './pages/Collection';
-import CollectionDetails from './pages/CollectionDetails';
+import CollectionCezanne from './pages/CollectionCezanne';
+import CollectionDetails from './pages/CollectionDetailsCezanne';
+import CollectionDali from './pages/CollectionDali';
 import Home from './pages/Home';
 import Nav from './components/nav';
 
@@ -17,7 +18,8 @@ root.render(
       <Nav />
       <Routes>
         <Route path='/' element={ <Home />}/> 
-        <Route path='collection/' element={<Collection />}/>
+        <Route path='collectionCezanne/' element={<CollectionCezanne />}/>
+        <Route path='collectionDali/' element={<CollectionDali />}/>
         <Route path='collection/:id' element={<CollectionDetails/>}/>
         <Route path='browse/' element={<Browse />}/>
       </Routes>
