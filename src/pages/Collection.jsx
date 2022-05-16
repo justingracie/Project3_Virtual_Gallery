@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 const Collection = ()=>{
-    const URL ='https://api.artic.edu/api/v1/artworks/search?q=cezanne&fields=title,artist_title,image_id&limit=10'
+    const URL ='https://api.artic.edu/api/v1/artworks/search?q=cezanne&fields=title,artist_title,image_id,id&limit=10'
     const[art, setArt] = useState(null)
     
     useEffect(() => {
@@ -18,25 +18,16 @@ const Collection = ()=>{
         }
         getArt()
     }, [])
-    
-    console.log(art)
-
     return(
-        
         <div>
             {art ? 
             <>
-               
                 {art.map ((work, idx)=>{
                     return(
                         <div key={idx}>
-                            {/* <h1>{work.title}</h1>
-                            <h4>{work.artist_title}</h4> */}
-                            <Link to={'/collection/:id'}>
+                            <Link to={`/collection/${work.id}`}>
                                 <img src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={art.title}/>
-
                             </Link>
-
                         </div>                       
                     )
                 }
