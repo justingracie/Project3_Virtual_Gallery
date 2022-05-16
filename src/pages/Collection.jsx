@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react'
 
 
 const Collection = ()=>{
-    const URL ='https://api.artic.edu/api/v1/artworks/111436'
+    const URL ='https://api.artic.edu/api/v1/artworks/search?q=cezanne&fields=title,artist_title,image_id&limit=10'
     const[art, setArt] = useState(null)
     
     useEffect(() => {
@@ -28,9 +28,18 @@ const Collection = ()=>{
         <div>
             {art ? 
             <>
-                <h1>{art.title}</h1>
-                <h4>{art.artist_title}</h4>
-                <img src={`https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg`} alt={art.title} />
+               
+                {art.map ((work, idx)=>{
+                    return(
+                        <div key={idx}>
+                            {/* <h1>{work.title}</h1>
+                            <h4>{work.artist_title}</h4> */}
+                            <img src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={art.title}/>
+
+                        </div>                       
+                    )
+                }
+                )}
             </> : <h2>Loading</h2> }
         </div>
     )
