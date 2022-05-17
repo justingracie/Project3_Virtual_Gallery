@@ -4,7 +4,7 @@ import { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 const CollectionPicasso = ()=>{
-    const URL ='https://api.artic.edu/api/v1/artworks/search?q=PabloPicasso&fields=title,artist_title,image_id,id&limit=10'
+    const URL ='https://api.artic.edu/api/v1/artworks/search?q=PabloPicasso&fields=title,artist_title,image_id,id&limit=24'
     const[art, setArt] = useState(null)
     
     useEffect(() => {

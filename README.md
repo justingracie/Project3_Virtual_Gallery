@@ -23,3 +23,7 @@ User's shouldn't have to login to view anything on this site.  They're simply he
 - On the Browse page allow users to select catagories/Artists/Collections to narrow search results
 - implement Bootstrap or another styling tool beyond flexbox
 - Find a Really nice NavBar template
+
+## References
+
+- https://reactjs.org/docs/getting-started.html
