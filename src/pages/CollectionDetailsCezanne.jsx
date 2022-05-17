@@ -14,7 +14,6 @@ const CollectionDetails = ()=>{
             const response = await fetch(URL)
             const data = await response.json()
             setArtDetails(data.data)
-            console.log(artDetails)
         } catch (error) {
             console.log('there seems to be an issue!, error')
         }
