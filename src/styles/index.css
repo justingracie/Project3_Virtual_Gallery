@@ -17,3 +17,7 @@ body {
 li{
   list-style: none;
 }
+.homeImage{
+  height: 500px;
+  width: 850px;
+}

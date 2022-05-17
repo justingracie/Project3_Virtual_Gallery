@@ -12,9 +12,9 @@ const Browse = ()=> {
             const response = await fetch(URL)
             const data = await response.json()
             setQuery(data.data)
-            console.log(query)
+            // console.log(query)
         } catch (error) {
-            console.log('Seems to be a Problem here', error)
+            console.log('Seems to be a Problem here')
         }
     }
     return(
