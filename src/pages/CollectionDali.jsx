@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 const CollectionDali = ()=>{
     const URL ='https://api.artic.edu/api/v1/artworks/search?q=SalvadorDali&fields=title,artist_title,image_id,id&limit=24'
     const[art, setArt] = useState(null)
-    
     useEffect(() => {
         const getArt = async () => {
             try {
@@ -38,5 +37,4 @@ const CollectionDali = ()=>{
         </div>
     )
 }
-
 export default CollectionDali

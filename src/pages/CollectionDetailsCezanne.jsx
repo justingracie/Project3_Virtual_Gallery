@@ -3,12 +3,10 @@ import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 
 const CollectionDetails = ()=>{
-    // console.log(URL)
     const params = useParams();
     const workId = params.id
     const URL =`https://api.artic.edu/api/v1/artworks/${workId}`
     const[artDetails, setArtDetails] = useState(null)
-    
     const getArtShow = async () => {
         try {
             const response = await fetch(URL)
@@ -20,7 +18,6 @@ const CollectionDetails = ()=>{
     }
     useEffect(() =>{
         getArtShow();
-
     }, [])
     return(
         <div className="details">
@@ -35,5 +32,4 @@ const CollectionDetails = ()=>{
         </div>
     )
 }
-
 export default CollectionDetails

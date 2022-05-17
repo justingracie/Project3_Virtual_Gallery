@@ -1,22 +1,11 @@
 import React from "react"
 import { useState } from 'react'
-// import { useParams } from "react-router-dom"
 
 const Browse = ()=> {
-    // const params = useParams()
-    // const id = params.id
-    // let newId;
-    // const randomUrl = () => {
-    //     console.log(newId)
-    // }            https://api.artic.edu/api/v1/artworks/129884
-    // https://collectionapi.metmuseum.org/public/collection/v1/objects/[objectID]
-
-
     const[query, setQuery] = useState(null)
     const handleSubmit = async (e) =>{
-        const newId = Math.floor(Math.random() * 116245)
+        const newId = Math.floor(Math.random() * 116127)
         const URL =`https://api.artic.edu/api/v1/artworks/${newId}`
-        // randomUrl()
         e.preventDefault()
         console.log('you clicked PUSH ME')
         try {
@@ -27,7 +16,6 @@ const Browse = ()=> {
         } catch (error) {
             console.log('Seems to be a Problem here', error)
         }
-    
     }
     return(
         <div className="index">
@@ -37,7 +25,6 @@ const Browse = ()=> {
                             <button className="button"
                                     onClick={handleSubmit}
                                     >
-
                                 Push ME!!!</button>
                         </div>
                         {query ?
@@ -50,5 +37,4 @@ const Browse = ()=> {
         </div>
     )
 }
-
 export default Browse

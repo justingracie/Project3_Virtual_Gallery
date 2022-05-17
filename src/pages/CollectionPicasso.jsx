@@ -6,14 +6,12 @@ import { Link } from 'react-router-dom'
 const CollectionPicasso = ()=>{
     const URL ='https://api.artic.edu/api/v1/artworks/search?q=PabloPicasso&fields=title,artist_title,image_id,id&limit=24'
     const[art, setArt] = useState(null)
-    
     useEffect(() => {
         const getArt = async () => {
             try {
                 const response = await fetch(URL)
                 const data = await response.json()
                 setArt(data.data)
-                console.log(art)
             } catch (error) {
                 console.log('there has been an error', error)
             }
@@ -38,5 +36,4 @@ const CollectionPicasso = ()=>{
         </div>
     )
 }
-
 export default CollectionPicasso
