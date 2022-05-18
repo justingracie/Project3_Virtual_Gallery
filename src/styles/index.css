@@ -23,3 +23,22 @@ li{
   height: 500px;
   width: 850px;
 }
+.indexImage{
+  max-height: 350px;
+  max-width: 400px;
+}
+
+.imageContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap: 20px;
+  padding: 20px;
+}
+
+.title{
+  text-align: center;
+}
+
+.art:hover{
+  transform: scale(1.10);
+}

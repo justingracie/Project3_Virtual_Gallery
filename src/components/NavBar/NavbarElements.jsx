@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'
 
 export const Nav = styled.nav`
     background: #808080;
-    background-image: url('https://images.unsplash.com/photo-1573096108468-702f6014ef28?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGFydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800');
+    background-image: url('https://images.unsplash.com/photo-1533158691535-6466cef7f713?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBhaW50JTIwY2FudmFzJTIwcGFzdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800');
     background-repeat: none;
     background-size: 100%;
     height: 80px;
@@ -25,7 +25,7 @@ export const NavLink = styled(Link)`
     font-size: 2 rem;
 
     &.active {
-        color: #15cdfc;
+        color: #FFFFF0;
     }
 `
 

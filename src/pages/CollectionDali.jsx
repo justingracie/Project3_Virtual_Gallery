@@ -20,20 +20,27 @@ const CollectionDali = ()=>{
         getArt()
     }, [])
     return(
-        <div className="index">
+        <div >
+            <div>
+                <h1 className="title">Dali Exhibit</h1>
+            
+            </div>
+            <div   className="index imageContainer">
             {art ? 
             <>
                 {art.map ((work, idx)=>{
                     return(
                         <div key={idx}>
                             <Link to={`/collection/${work.id}`}>
-                                <img src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={art.title}/>
+                                <img className="indexImage art" src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={art.title}/>
                             </Link>
                         </div>                       
                     )
                 }
                 )}
             </> : <h2>Loading...</h2> }
+            
+            </div>
         </div>
     )
 }
