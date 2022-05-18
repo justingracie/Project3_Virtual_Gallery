@@ -12,13 +12,14 @@ import CollectionPicasso from './pages/CollectionPicasso';
 // import Carousel from './components/Carousel';
 // import Home from './pages/Home';
 import CarouselComponent from './components/CarouselComponent';
-import Nav from './components/nav';
+// import Nav from './components/nav';
+import Navbar from './components/NavBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Nav />
+      <Navbar />
       <Routes>
         <Route path='/' element={ <CarouselComponent />}/> 
         <Route path='collectionCezanne/' element={<CollectionCezanne />}/>
