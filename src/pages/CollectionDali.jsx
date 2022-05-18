@@ -32,7 +32,7 @@ const CollectionDali = ()=>{
                     return(
                         <div key={idx}>
                             <Link to={`/collection/${work.id}`}>
-                                <img className="indexImage art" src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={art.title}/>
+                                <img className="indexImage art" src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={work.title}/>
                             </Link>
                         </div>                       
                     )
