@@ -27,3 +27,4 @@ User's shouldn't have to login to view anything on this site.  They're simply he
 ## References
 
 - https://reactjs.org/docs/getting-started.html
+- https://www.positronx.io/react-responsive-carousel-tutorial/

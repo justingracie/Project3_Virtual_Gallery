@@ -9,7 +9,9 @@ import CollectionCezanne from './pages/CollectionCezanne';
 import CollectionDetails from './pages/CollectionDetailsCezanne';
 import CollectionDali from './pages/CollectionDali';
 import CollectionPicasso from './pages/CollectionPicasso';
-import Home from './pages/Home';
+// import Carousel from './components/Carousel';
+// import Home from './pages/Home';
+import CarouselComponent from './components/CarouselComponent';
 import Nav from './components/nav';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +20,7 @@ root.render(
     <Router>
       <Nav />
       <Routes>
-        <Route path='/' element={ <Home />}/> 
+        <Route path='/' element={ <CarouselComponent />}/> 
         <Route path='collectionCezanne/' element={<CollectionCezanne />}/>
         <Route path='collectionDali/' element={<CollectionDali />}/>
         <Route path='collectionPicasso/' element={<CollectionPicasso />}/>
