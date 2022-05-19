@@ -6,13 +6,16 @@ const Browse = ()=> {
     const handleSubmit = async (e) =>{
         const newId = Math.floor(Math.random() * 116127)
         const URL =`https://api.artic.edu/api/v1/artworks/${newId}`
-        e.preventDefault()
+        // e.preventDefault()
         console.log('you clicked PUSH ME')
         try {
             const response = await fetch(URL)
             const data = await response.json()
-            setQuery(data.data)
-            // console.log(query)
+            if(data.status === 404){
+                handleSubmit()
+            }else{
+                setQuery(data.data)
+            }
         } catch (error) {
             console.log('Seems to be a Problem here')
         }

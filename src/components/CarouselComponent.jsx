@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const CarouselComponent = () => {
     return(
     <div className='carousel-wrapper'>
-        <Carousel infiniteLoop useKeyboardArrows autoPlay interval={6000}>
+        <Carousel infiniteLoop useKeyboardArrows autoPlay interval={6000} showThumbs={false}>
             <div>
                 <Link to='/collectionDali'>
                     <div>

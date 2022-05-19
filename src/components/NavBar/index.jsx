@@ -6,23 +6,23 @@ const Navbar = () => {
     <>
       <Nav>
         <NavLink to='/'>
-          <h1>Home</h1>
-        </NavLink>
-          <Bars/>
-            <NavMenu>
-              <NavLink to="/collectionCezanne" activeStyle>
-                Cezanne Exhibit
-              </NavLink>
-              <NavLink to="/collectionDali" activeStyle>
-                Dali Exhibit
-              </NavLink>
-              <NavLink to="/collectionPicasso" activeStyle>
-                Picasso Exhibit
-              </NavLink>
-              <NavLink to="/browse" activeStyle>
-                Browse
-              </NavLink>
-        </NavMenu>
+          <img src='../icons8-mona-lisa-48.png' alt='MonaLisa'></img>
+            </NavLink>
+              <Bars/>
+                <NavMenu>
+                  <NavLink to="/collectionCezanne">
+                    Cezanne Exhibit
+                  </NavLink>
+                  <NavLink to="/collectionDali">
+                    Dali Exhibit
+                  </NavLink>
+                  <NavLink to="/collectionPicasso">
+                    Picasso Exhibit
+                  </NavLink>
+                  <NavLink to="/browse">
+                    Browse
+                  </NavLink>
+            </NavMenu>
 
       </Nav>
     </>

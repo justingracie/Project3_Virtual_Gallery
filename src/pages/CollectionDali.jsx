@@ -12,7 +12,7 @@ const CollectionDali = ()=>{
                 const response = await fetch(URL)
                 const data = await response.json()
                 setArt(data.data)
-                console.log(art)
+                // console.log(art)
             } catch (error) {
                 console.log('there has been an error', error)
             }
@@ -23,7 +23,6 @@ const CollectionDali = ()=>{
         <div >
             <div>
                 <h1 className="title">Dali Exhibit</h1>
-            
             </div>
             <div   className="index imageContainer">
             {art ? 
