@@ -22,7 +22,6 @@ const CollectionCezanne = ()=>{
         <div>
             <div>
                 <h1 className="title">Cezanne Exhibit</h1>
-            
             </div>
             <div  className="index imageContainer" id="grid" >
                 {art ? 

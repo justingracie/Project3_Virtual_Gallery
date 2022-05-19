@@ -1,28 +1,30 @@
 # Virtual Gallery React
 
-In this project I'll be using the Metropolitian museum of Modern Art's public API to build a virtual Gallery.  I will use this API to curate and host a collection of works for site visitors to view.  On the collection page they'll be able to view the entire current collection, and if they click on a work of art they'll be provided with more details on the work.  There will also be a  browse page which will have a button that will return a random work of art from the MET's over 400,000 works on available on their API. 
+For this project I essentially built a React front end for the Art Institute of Chicago's public API. It is designed to be a virtual gallery featuring 3 artist exhibits.  There is also a Browse page that allows visitors to click a button to randomly generate a work of art from the Art institutes database of about 120 thousand works of art.   
 
-## User Story
 
-User's shouldn't have to login to view anything on this site.  They're simply here to view the collections of The MET. Users can browser a curated collection, or they can browse the API on their own on the Browse page. 
+### Images of Site
 
-### Wireframes
+!["AppPic1"](./Images/Home.PNG)
 
-!["WireFrame"](./Images/WireFram_Proj3.PNG)
+!["AppPic1"](./Images/Index.PNG)
 
-### MVP
+!["AppPic1"](./Images/Details.PNG)
 
-- Access data from MET api and index a curated collection
-- Render show Page for Items in curated Collection
-- Browse Page which will have a Button to Randomly Access items from entire MET collection for Users to Browse
-- Build React Front End with Clean Styling using Flexbox or Grid Layout
-- Professional looking Clean styling
+!["AppPic1"](./Images/Browse.PNG)
 
-### Stretch
 
-- On the Browse page allow users to select catagories/Artists/Collections to narrow search results
-- implement Bootstrap or another styling tool beyond flexbox
-- Find a Really nice NavBar template
+### Tech Used
+
+Javascript, JSX, React, CSS, React Router, React responsive carousel, React styled components, Node, Grid, icons8
+
+### Next Steps
+
+My future plans for this site are to update either on a monthly or quarterly basis.  Updates would include new artist exhibits, updated styling to reflect the asthetic of the updated exhibits, and new features TBD. I also plan to share this project with the Art institute of Chicago so I can share what I've done with their API.
+
+### Contribution Guidelines
+
+If you run into any bugs please feel free to submit and issue on this github page.  If you'd like to submit any updates feel free to fork clone and submit a pull request and I can review your code!
 
 ## References
 

@@ -6,7 +6,6 @@ const Browse = ()=> {
     const handleSubmit = async (e) =>{
         const newId = Math.floor(Math.random() * 116127)
         const URL =`https://api.artic.edu/api/v1/artworks/${newId}`
-        // e.preventDefault()
         console.log('you clicked PUSH ME')
         try {
             const response = await fetch(URL)
