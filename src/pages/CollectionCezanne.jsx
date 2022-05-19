@@ -24,12 +24,12 @@ const CollectionCezanne = ()=>{
                 <h1 className="title">Cezanne Exhibit</h1>
             
             </div>
-            <div  className="index imageContainer" >
+            <div  className="index imageContainer" id="grid" >
                 {art ? 
                 <>
                     {art.map ((work, idx)=>{
                         return(
-                            <div key={idx} className="grid">
+                            <div key={idx} >
                                 <Link to={`/collection/${work.id}`}>
                                     <img className="indexImage art" src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={art.title}/>
                                 </Link>

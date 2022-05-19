@@ -24,8 +24,7 @@ const CollectionPicasso = ()=>{
                 <h1 className="title">Picasso Exhibit</h1>
             
             </div>
-                <div className="index imageContainer" >
-                
+                <div className="index imageContainer" id="grid">
                     {art ? 
                     <>
                         {art.map ((work, idx)=>{

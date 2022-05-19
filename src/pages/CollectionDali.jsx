@@ -24,7 +24,7 @@ const CollectionDali = ()=>{
             <div>
                 <h1 className="title">Dali Exhibit</h1>
             </div>
-            <div   className="index imageContainer">
+            <div   className="index imageContainer" id="grid">
             {art ? 
             <>
                 {art.map ((work, idx)=>{
