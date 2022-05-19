@@ -7,16 +7,17 @@ const CollectionDetails = ()=>{
     const workId = params.id
     const URL =`https://api.artic.edu/api/v1/artworks/${workId}`
     const[artDetails, setArtDetails] = useState(null)
-    const getArtShow = async () => {
-        try {
-            const response = await fetch(URL)
-            const data = await response.json()
-            setArtDetails(data.data)
-        } catch (error) {
-            console.log('there seems to be an issue!, error')
-        }
-    }
+    
     useEffect(() =>{
+        const getArtShow = async () => {
+            try {
+                const response = await fetch(URL)
+                const data = await response.json()
+                setArtDetails(data.data)
+            } catch (error) {
+                console.log('there seems to be an issue!, error')
+            }
+        }
         getArtShow();
     }, [])
     return(
