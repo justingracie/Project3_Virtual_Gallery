@@ -34,7 +34,7 @@ const Browse = ()=> {
                             <h1>{query.title}</h1>
                             <h3>{query.artist_title}</h3>
                             <img src={`https://www.artic.edu/iiif/2/${query.image_id}/full/843,/0/default.jpg`} alt={query.title}/>
-                        </>: <h2></h2> } 
+                        </>: <h2>Loading...</h2> } 
                 </div>
         </div>
     )
