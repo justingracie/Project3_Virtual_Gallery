@@ -27,7 +27,11 @@ const CollectionDetails = ()=>{
                 <h3>{artDetails.artist_title}</h3>
                 <h5>Medium: {artDetails.medium_display}</h5>
                 <h5>Year: {artDetails.date_display}</h5>
-                <img src={`https://www.artic.edu/iiif/2/${artDetails.image_id}/full/843,/0/default.jpg`} alt={artDetails.title}/>
+                { (artDetails.image_id === null) ?
+                        <img src={'../default.jpeg'} alt='Mona Lisa'/>
+                        :
+                        <img src={`https://www.artic.edu/iiif/2/${artDetails.image_id}/full/843,/0/default.jpg`} alt={artDetails.title}/>
+                }
             </>: <h2>LOADING...</h2> }
         </div>
     )
