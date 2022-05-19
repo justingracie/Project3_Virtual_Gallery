@@ -11,8 +11,8 @@ const CollectionDali = ()=>{
             try {
                 const response = await fetch(URL)
                 const data = await response.json()
+                console.log(data)
                 setArt(data.data)
-                // console.log(art)
             } catch (error) {
                 console.log('there has been an error', error)
             }
@@ -31,7 +31,11 @@ const CollectionDali = ()=>{
                     return(
                         <div key={idx}>
                             <Link to={`/collection/${work.id}`}>
-                                <img className="indexImage art" src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={work.title}/>
+                               { (work.image_id === null) ?
+                                         <img className="indexImage art" src={'../default.jpeg'} alt='Mona Lisa'/>
+                                     :
+                                        <img className="indexImage art" src={`https://www.artic.edu/iiif/2/${work.image_id}/full/843,/0/default.jpg`} alt={work.title}/>
+                                 } 
                             </Link>
                         </div>                       
                     )

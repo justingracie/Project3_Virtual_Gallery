@@ -27,7 +27,6 @@ const CollectionDetails = ()=>{
                 <h3>{artDetails.artist_title}</h3>
                 <h5>Medium: {artDetails.medium_display}</h5>
                 <h5>Year: {artDetails.date_display}</h5>
-                {console.log(artDetails.image_id)}
                 <img src={`https://www.artic.edu/iiif/2/${artDetails.image_id}/full/843,/0/default.jpg`} alt={artDetails.title}/>
             </>: <h2>LOADING...</h2> }
         </div>
