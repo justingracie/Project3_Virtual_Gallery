@@ -29,4 +29,5 @@ User's shouldn't have to login to view anything on this site.  They're simply he
 - https://reactjs.org/docs/getting-started.html
 - https://www.positronx.io/react-responsive-carousel-tutorial/
 - https://stackoverflow.com/questions/3910736/-     how-to-call-multiple-javascript-functions-in-onclick-event
-- https://www.youtube.com/watch?v=VzWBLj_CfpE ( React Navbar tutorial)
+- https://www.youtube.com/watch?v=VzWBLj_CfpE
+- https://react.school/ui/button

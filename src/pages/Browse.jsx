@@ -28,7 +28,7 @@ const Browse = ()=> {
                             <button className="button"
                                     onClick={handleSubmit}
                                     >
-                                Push ME!!!</button>
+                                CLICK HERE</button>
                         </div>
                         {query ?
                         <>
