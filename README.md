@@ -15,7 +15,7 @@ For this project I built a React front end for the Art Institute of Chicago's pu
 
 ### Visit Site here
 
-https://sparkling-selkie-faae70.netlify.app/
+https://virtual-gallery-capi.netlify.app/
 
 ### Tech Used
 
