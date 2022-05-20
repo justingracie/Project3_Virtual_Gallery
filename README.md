@@ -1,6 +1,6 @@
 # Virtual Gallery React
 
-For this project I essentially built a React front end for the Art Institute of Chicago's public API. It is designed to be a virtual gallery featuring 3 artist exhibits.  There is also a Browse page that allows visitors to click a button to randomly generate a work of art from the Art institutes database of about 120 thousand works of art.   
+For this project I built a React front end for the Art Institute of Chicago's public API. It is designed to be a virtual gallery featuring 3 artist exhibits.  There is also a Browse page that allows visitors to click a button that randomly generate a work of art from the Art institutes database of nearly 120 thousand works of art.   
 
 
 ### Images of Site
@@ -23,11 +23,11 @@ Javascript, JSX, React, CSS, React Router, React responsive carousel, React styl
 
 ### Next Steps
 
-My future plans for this site are to update either on a monthly or quarterly basis.  Updates would include new artist exhibits, updated styling to reflect the asthetic of the updated exhibits, and new features TBD. I also plan to share this project with the Art institute of Chicago so I can share what I've done with their API.
+My future plans for this site are to update either on a monthly or quarterly basis.  Updates would include new artist exhibits, updated styling to reflect the asthetic of the updated exhibits, and new features TBD. I also plan to share this project with the Art institute of Chicago so I can share what I've done with their API.  
 
 ### Contribution Guidelines
 
-If you run into any bugs please feel free to submit and issue on this github page.  If you'd like to submit any updates feel free to fork clone and submit a pull request and I can review your code!
+If you run into any bugs please feel free to submit and issue on this github page.  If you'd like to submit any updates feel free to fork clone and submit a pull request so I can review your code!
 
 ## References
 

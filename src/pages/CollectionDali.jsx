@@ -11,7 +11,6 @@ const CollectionDali = ()=>{
             try {
                 const response = await fetch(URL)
                 const data = await response.json()
-                console.log(data)
                 setArt(data.data)
             } catch (error) {
                 console.log('there has been an error', error)
